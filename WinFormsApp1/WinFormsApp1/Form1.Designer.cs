@@ -18,6 +18,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+
         }
 
         #region Windows Form Designer generated code
@@ -28,12 +29,94 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            checkBox1 = new CheckBox();
+            CalcularPrecio_Click = new Button();
+            label2 = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(128, 91);
+            label1.Name = "label1";
+            label1.Size = new Size(45, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Texto";
+            label1.Click += label1_Click;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(169, 241);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(91, 24);
+            checkBox1.TabIndex = 1;
+            checkBox1.Text = "Urgente?";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // CalcularPrecio_Click
+            // 
+            CalcularPrecio_Click.Location = new Point(525, 320);
+            CalcularPrecio_Click.Name = "CalcularPrecio_Click";
+            CalcularPrecio_Click.Size = new Size(161, 72);
+            CalcularPrecio_Click.TabIndex = 2;
+            CalcularPrecio_Click.Text = "Calcular";
+            CalcularPrecio_Click.UseVisualStyleBackColor = true;
+            CalcularPrecio_Click.Click += button_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(105, 300);
+            label2.Name = "label2";
+            label2.Size = new Size(49, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Coste:";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(169, 300);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(115, 27);
+            textBox1.TabIndex = 4;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(128, 114);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(389, 79);
+            textBox2.TabIndex = 5;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(txtTelegrama);
+            Controls.Add(Texto);
+            Controls.Add(Coste);
+            Controls.Add(txtPrecio);
+            Controls.Add(chkUrgente);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private CheckBox chkUrgente;
+        private TextBox txtPrecio;
+        private Label Coste;
+        private Label Texto;
+        private TextBox txtTelegrama;
+        private Button button1;
     }
 }
