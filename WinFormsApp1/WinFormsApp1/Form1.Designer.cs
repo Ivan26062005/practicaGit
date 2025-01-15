@@ -29,7 +29,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            //
+            txtPrecio = new Label();
             checkBox1 = new CheckBox();
             CalcularPrecio_Click = new Button();
             label2 = new Label();
@@ -79,19 +80,19 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(169, 300);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(115, 27);
-            textBox1.TabIndex = 4;
-            textBox1.TextChanged += textBox1_TextChanged;
+            txtTelegrama.Location = new Point(169, 300);
+            txtTelegrama.Name = "textBox1";
+            txtTelegrama.Size = new Size(115, 27);
+            Texto.TabIndex = 4;
+            txtTelegrama.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(128, 114);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(389, 79);
-            textBox2.TabIndex = 5;
+            txtPrecio.Location = new Point(128, 114);
+            txtPrecio.Multiline = true;
+            txtPrecio.Name = "textBox2";
+            txtPrecio.Size = new Size(389, 79);
+            Coste.TabIndex = 5;
             // 
             // Form1
             // 
@@ -109,7 +110,7 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
+       
         #endregion
 
         private CheckBox chkUrgente;

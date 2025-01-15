@@ -67,7 +67,21 @@ namespace WinFormsApp1
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            // doifdjjfoijdoifjdfiodfoidfj
+            // doifewoifjewoifweoifoiwef
+            // doifdjjfoijdoifjdfiodfoidfj
+            // doifewoifjewoifweoifoiwef
+            // doifdjjfoijdoifjdfiodfoidfj
+            // doifewoifjewoifweoifoiwef
+            // doifdjjfoijdoifjdfiodfoidfj
+            // doifewoifjewoifweoifoiwef
+            // doifdjjfoijdoifjdfiodfoidfj
+            // doifewoifjewoifweoifoiwef
+            // doifdjjfoijdoifjdfiodfoidfj
+            // doifdjjfoijdoifjdfiodfoidfj
 
+            // doifewoifjewoifweoifoiwef
+            // doifewoifjewoifweoifoiwef
         }
 
     }
